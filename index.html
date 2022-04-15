@@ -5,32 +5,99 @@
 	</head>
 	<body>
 		<style>
-		body{
+		#WebContainer{
+		position:fixed;
+		height:100%;
+		width:100%;
+		background-image: url("images/Batcave.png");
+		background-repeat: repeat;
 		background-color:gray;
-		
 		}
+		
 		#Title{
 		position:relative;
 		text-align:center;
+		color:white;
 		}
 		
-		#TitleImg{
+		#MainCom{
 		position:absolute;
+		height:60%;
+		width:40%;
 		left:50%;
-		top:50%;
+		top:59%;
+		transform: translate(-50%,-50%);
+		background-color:rgba(7, 240, 235,0.7);
+		z-index:1;
+		}
+		
+		#MainFrame{
+		position:relative;
+		height:250%;
+		width:140%;
+		left:50%;
+		top:60%;
+		transform: translate(-50%,-50%);
+		}
+		
+		#LeftCom{
+		position:absolute;
+		height:60%;
+		width:20%;
+		left:20%;
+		top:59%;
+		transform: translate(-50%,-50%);
+		background-color:rgba(255, 255,255,0.9);
+		z-index:1;
+		}
+		
+		#LeftFrame{
+		position:relative;
+		height:250%;
+		width:140%;
+		left:50%;
+		top:60%;
+		transform: translate(-50%,-50%);
+		}
+		
+		#RightCom{
+		position:absolute;
+		height:60%;
+		width:20%;
+		right:0%;
+		top:59%;
+		transform: translate(-50%,-50%);
+		background-color:rgba(255, 255,255,0.9);
+		z-index:1;
+		}
+		
+		#RightFrame{
+		position:relative;
+		height:250%;
+		width:140%;
+		left:50%;
+		top:60%;
 		transform: translate(-50%,-50%);
 		}
 		
 		#broadcastMsg{
 		font-size:25px;
-		
+		color:white;
 		}
 		</style>
 		
 		<div id="WebContainer">
 			<h1 id="Title">I am Batman</h1>
-			<marquee id="broadcastMsg" truespeed=300 behavior="alternate" direction=right>I am also Vengeance</marquee>
-			<img id="TitleImg" src="images/Batzy.jpg"><img>
+			<marquee id="broadcastMsg" truespeed=500 behavior="alternate" direction=right>I am also Vengeance</marquee>
+			<div id="MainCom">
+			<img id="MainFrame" src="images/MainFrame.png"></img>
+			</div>
+			<div id="LeftCom">
+			<img id="LeftFrame" src="images/MainFrame.png"></img>
+			</div>
+			<div id="RightCom">
+			<img id="RightFrame" src="images/MainFrame.png"></img>
+			</div>
 		</div>
 	</body>
 	
